@@ -7,7 +7,7 @@ Aplicação web para pesquisa de palavras e trechos em documentos de texto, impl
 - Bruno Luis Pereira
 - Rafael Pereira
 - Ramires Silva Paes
-
+Link do video: https://www.youtube.com/watch?v=uxSkSUvj_TY
 ---
 
 ## Algoritmos Implementados

@@ -4,20 +4,22 @@ Aplicação web para pesquisa de palavras e trechos em documentos de texto, impl
 
 **Disciplina:** Algoritmos Avançados  
 **Integrantes:**
+
 - Bruno Luis Pereira
 - Rafael Pereira
 - Ramires Silva Paes
-Link do video: https://www.youtube.com/watch?v=uxSkSUvj_TY
+  Link do video: https://youtu.be/9udPn8EM-Xw
+
 ---
 
 ## Algoritmos Implementados
 
-| Algoritmo | Complexidade | Estratégia |
-|-----------|-------------|-----------|
-| Força Bruta (Naive) | O(N·M) pior caso | Comparação direta char a char |
-| Rabin-Karp | O(N+M) esperado | Hash rolante |
-| KMP | O(N+M) garantido | Tabela LPS (falhas) |
-| Boyer-Moore | O(N/M) melhor caso | Heurística Bad Character |
+| Algoritmo           | Complexidade       | Estratégia                    |
+| ------------------- | ------------------ | ----------------------------- |
+| Força Bruta (Naive) | O(N·M) pior caso   | Comparação direta char a char |
+| Rabin-Karp          | O(N+M) esperado    | Hash rolante                  |
+| KMP                 | O(N+M) garantido   | Tabela LPS (falhas)           |
+| Boyer-Moore         | O(N/M) melhor caso | Heurística Bad Character      |
 
 ---
 
@@ -79,13 +81,13 @@ docker-compose up --build
 
 Aguarde todos os serviços iniciarem.
 
-| Serviço | URL |
-|---------|-----|
-| Backend API | http://localhost:8000 |
-| Frontend | abrir `frontend/index.html` no navegador |
-| Grafana | http://localhost:3000 (admin / admin) |
-| Prometheus | http://localhost:9090 |
-| API Docs (Swagger) | http://localhost:8000/docs |
+| Serviço            | URL                                      |
+| ------------------ | ---------------------------------------- |
+| Backend API        | http://localhost:8000                    |
+| Frontend           | abrir `frontend/index.html` no navegador |
+| Grafana            | http://localhost:3000 (admin / admin)    |
+| Prometheus         | http://localhost:9090                    |
+| API Docs (Swagger) | http://localhost:8000/docs               |
 
 ### 3. (Alternativa) Rodar o backend localmente sem Docker
 
@@ -124,12 +126,12 @@ pytest tests/test_algorithms.py -v
 
 ## Documentos de Teste
 
-| Documento | Uso |
-|-----------|-----|
-| Bíblia (~4 MB) | Stress test com N grande |
-| Os Lusíadas | Caracteres especiais / acentuação |
-| A Catedral e o Bazar | Texto técnico em inglês |
-| _(obra escolhida)_ | Qualquer domínio público |
+| Documento            | Uso                               |
+| -------------------- | --------------------------------- |
+| Bíblia (~4 MB)       | Stress test com N grande          |
+| Os Lusíadas          | Caracteres especiais / acentuação |
+| A Catedral e o Bazar | Texto técnico em inglês           |
+| _(obra escolhida)_   | Qualquer domínio público          |
 
 ---
 
@@ -138,6 +140,7 @@ pytest tests/test_algorithms.py -v
 Acesse **http://localhost:3000** → Dashboards → **Motor de Busca — Observabilidade**.
 
 O dashboard exibe:
+
 - Total de buscas e buscas com resultado encontrado
 - Tempo médio de busca por algoritmo (série temporal)
 - Histograma de distribuição de tempo
